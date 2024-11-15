@@ -2,25 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Introduction to NumPy</title>
+    <title>Lesson 1: Introduction to NumPy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/monokai.min.css">
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css"> <!-- Prism.js CSS theme -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <!-- Learn content sidebar with header -->
     <div class="instructions">
         <div class="instructions-header">Learn: Introduction to NumPy</div>
         <div class="instructions-content">
             <h3>What is NumPy?</h3>
-            <p>NumPy is a powerful library in Python used for numerical computations. It provides support for arrays, matrices, and many mathematical functions.</p>
+            <p>NumPy is a Python library for numerical computations. It offers support for arrays, matrices, and mathematical operations.</p>
 
             <h3>Examples to Try</h3>
-            <p>Follow these examples in the editor to understand how NumPy arrays work:</p>
-
             <ol>
                 <li>
                     <strong>Create a 1D Array:</strong>
@@ -36,18 +32,6 @@ print("2D Array:\n", array_2d)</code></pre>
                 </li>
 
                 <li>
-                    <strong>Perform Element-Wise Addition:</strong>
-                    <pre><code class="language-python">added_array = array_1d + 10
-print("Array after addition:", added_array)</code></pre>
-                </li>
-
-                <li>
-                    <strong>Reshape the Array:</strong>
-                    <pre><code class="language-python">reshaped_array = array_1d.reshape((5, 1))
-print("Reshaped Array:\n", reshaped_array)</code></pre>
-                </li>
-
-                <li>
                     <strong>Create an Array of Zeros:</strong>
                     <pre><code class="language-python">zeros_array = np.zeros((2, 3))
 print("Array of zeros:\n", zeros_array)</code></pre>
@@ -56,11 +40,10 @@ print("Array of zeros:\n", zeros_array)</code></pre>
         </div>
     </div>
 
-    <!-- Editor column with header -->
     <div class="editor-container">
         <div class="header">app.py</div>
         <div class="code-editor">
-            <textarea id="editor"># Introduction to NumPy\nimport numpy as np\n\n# Try some of the examples from the lesson to see NumPy in action!</textarea>
+            <textarea id="editor">#Create your arrays here to test! Dont forget to import numpy as np! </textarea>
         </div>
         <div class="controls">
             <button id="increaseFont" class="font-button">A+</button>
@@ -69,27 +52,20 @@ print("Array of zeros:\n", zeros_array)</code></pre>
         </div>
     </div>
 
-    <!-- Output column with header -->
     <div class="output-container">
         <div class="output-header">Output</div>
-        <div class="output-content" id="output">
-            Output will appear here.
-        </div>
+        <div class="output-content" id="output">Output will appear here.</div>
     </div>
 </div>
 
-<!-- Back and Next buttons at the bottom -->
 <div class="nav-buttons-container">
-    <button class="nav-button" onclick="goBack()">&#60;</button> <!-- Back button -->
-    <button class="nav-button" onclick="goNext()">&#62;</button> <!-- Next button -->
+    <button class="nav-button" onclick="goNext('../lesson2/index.html')">&#62;</button>
 </div>
 
-<!-- Include CodeMirror, Pyodide, Prism.js, and External JS File -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/python/python.min.js"></script>
 <script src="https://cdn.jsdelivr.net/pyodide/v0.23.0/full/pyodide.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script> <!-- Prism.js JavaScript -->
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
-
+<script src="script.js"></script>
 </body>
 </html>

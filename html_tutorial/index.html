@@ -1,1 +1,60 @@
-<!-- HTML landing page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Live Editor</title>
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/monokai.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="instructions">
+        <div class="instructions-header">Learn: HTML Basics</div>
+        <div class="instructions-content">
+            <h3>HTML Basics</h3>
+            <p>Write your HTML code in the editor, and see it rendered live in the preview!</p>
+        </div>
+    </div>
+
+    <div class="editor-container">
+        <div class="header">Live HTML Editor</div>
+        <div class="code-editor">
+            <textarea id="editor">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+        </div>
+        <div class="controls">
+            <button id="increaseFont" class="font-button">A+</button>
+            <button id="decreaseFont" class="font-button">A-</button>
+            <button id="runButton" class="run-button" onclick="updatePreview()">Run</button>
+        </div>
+    </div>
+
+    <div class="output-container">
+        <div class="output-header">Live Preview</div>
+        <iframe id="html-output"></iframe>
+    </div>
+</div>
+
+<!-- CodeMirror Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/htmlmixed/htmlmixed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closebrackets.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchbrackets.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>

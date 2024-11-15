@@ -1,0 +1,139 @@
+/* Global styling for Monokai theme */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #272822; /* Monokai background */
+    color: #F8F8F2; /* Monokai text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar styling (Learn section) */
+.instructions {
+    width: 30%;
+    background-color: #3E3D32; /* Monokai muted background */
+    overflow-y: auto;
+    border-right: 1px solid #75715E; /* Monokai accent */
+    display: flex;
+    flex-direction: column;
+}
+
+.instructions-header {
+    padding: 1rem;
+    background-color: #3E3D32;
+    color: #E6DB74; /* Monokai yellow */
+    font-weight: bold;
+    border-bottom: 1px solid #75715E;
+}
+
+.instructions-content {
+    padding: 1.5rem;
+    color: #F8F8F2; /* Monokai text */
+    flex-grow: 1;
+}
+
+/* Editor container styling */
+.editor-container {
+    width: 40%;
+    background-color: #272822; /* Monokai dark background */
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #75715E; /* Monokai accent */
+}
+
+.header {
+    padding: 1rem;
+    background-color: #3E3D32; /* Monokai muted background */
+    color: #E6DB74; /* Monokai yellow */
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #75715E; /* Monokai accent */
+}
+
+/* CodeMirror editor styling */
+.CodeMirror {
+    background-color: #272822; /* Monokai background */
+    color: #F8F8F2; /* Monokai text */
+    height: 100%;
+    font-size: 14px;
+}
+
+/* Control buttons for editor */
+.controls {
+    padding: 0.5rem 1rem;
+    background-color: #272822;
+    display: flex;
+    justify-content: space-between;
+}
+
+.font-button, .run-button {
+    background-color: #66D9EF; /* Monokai blue */
+    border: none;
+    color: #1E1E1E; /* Monokai dark */
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 0 0.5rem;
+}
+
+.font-button:hover, .run-button:hover {
+    background-color: #A6E22E; /* Monokai green */
+}
+
+/* Output container styling */
+.output-container {
+    width: 30%;
+    background-color: #3E3D32; /* Monokai muted background */
+    color: #F8F8F2; /* Monokai text */
+    display: flex;
+    flex-direction: column;
+}
+
+.output-header {
+    padding: 1rem;
+    background-color: #3E3D32;
+    color: #E6DB74; /* Monokai yellow */
+    font-weight: bold;
+    border-bottom: 1px solid #75715E; /* Monokai accent */
+}
+
+/* Live preview iframe */
+iframe {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #75715E; /* Monokai accent */
+    background-color: #272822; /* Monokai background */
+}
+
+/* Navigation buttons styling */
+.nav-buttons-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: #3E3D32;
+}
+
+.nav-button {
+    background-color: #F92672; /* Monokai red */
+    color: #F8F8F2; /* Monokai text */
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.nav-button:hover {
+    background-color: #A6E22E; /* Monokai green */
+}

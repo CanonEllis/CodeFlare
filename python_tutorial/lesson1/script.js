@@ -80,6 +80,6 @@ function goBack() {
     alert("Go to the previous section");
 }
 
-function goNext() {
-    alert("Go to the next section");
+function goNext(page) {
+    window.location.href = page;
 }
