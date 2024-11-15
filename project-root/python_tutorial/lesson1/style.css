@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1E1E1E;
+    color: #D4D4D4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    flex: 1;
+}
+.instructions {
+    width: 30%;
+    background-color: #2D2D2D;
+    overflow-y: auto;
+    border-right: 1px solid #444;
+    display: flex;
+    flex-direction: column;
+}
+.instructions-header {
+    padding: 1rem;
+    background-color: #2D2D2D;
+    color: #CCCCCC;
+    font-weight: bold;
+    border-bottom: 1px solid #444;
+}
+.instructions-content {
+    padding: 1.5rem;
+    color: #CCCCCC;
+    flex-grow: 1;
+}
+.editor-container {
+    width: 40%;
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #444;
+}
+.header {
+    padding: 1rem;
+    background-color: #2D2D2D;
+    color: #CCCCCC;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+.code-editor {
+    flex-grow: 1;
+    background-color: #1E1E1E;
+    height: 100%;
+}
+.CodeMirror {
+    height: 100%;
+}
+.output-container {
+    width: 30%;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+.output-header {
+    padding: 1rem;
+    background-color: #2D2D2D;
+    color: #CCCCCC;
+    font-weight: bold;
+    border-bottom: 1px solid #444;
+}
+.output-content {
+    padding: 1rem;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+.controls {
+    padding: 0.5rem 1rem;
+    background-color: #1E1E1E;
+    display: flex;
+    gap: 10px; /* Add spacing between buttons */
+}
+.font-button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 40px;
+    text-align: center;
+}
+.font-button:hover {
+    background-color: #45A049;
+}
+.run-button {
+    background-color: #FFD700;
+    border: none;
+    color: #1E1E1E;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.run-button:hover {
+    background-color: #FFC300;
+}
+.nav-buttons-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5rem; /* Reduce padding */
+    background-color: #2D2D2D;
+}
+
+.nav-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.3rem 0.6rem; /* Smaller padding */
+    border: none;
+    border-radius: 3px; /* Reduced border radius */
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 5px; /* Reduce spacing between buttons */
+    width: auto; /* Let the size adjust based on content */
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #45A049;
+}
