@@ -1,0 +1,29 @@
+/* Shared styles for the site *//* Global Monokai Theme */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #272822; /* Monokai background */
+    color: #F8F8F2; /* Monokai text color */
+}
+
+a {
+    color: #66D9EF; /* Monokai blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A6E22E; /* Monokai green */
+}
+
+header, footer {
+    background-color: #202020; /* Slightly darker for contrast */
+    text-align: center;
+    padding: 1rem;
+    color: #F8F8F2;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: #75715E; /* Monokai muted grey */
+}
